@@ -1,0 +1,6 @@
+.dockerignore
+Dockerfile
+**/.dist/
+**/.git/
+config.json
+README.md
