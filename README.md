@@ -1,9 +1,10 @@
 ## 构建容器镜像
 
-提前下载 [yapi 源码](git@github.com:YMFE/yapi.git) 到 `code` 目录：
+通过 git submodule 方式，提前下载 [yapi 源码](git@github.com:YMFE/yapi.git) 到 `code` 目录：
 
 ```bash
-git clone git@github.com:YMFE/yapi.git code
+# 需要将 .gitmodules 替换为你有权限访问的 git 仓库地址
+git submodule update
 ```
 
 构建容器镜像：
