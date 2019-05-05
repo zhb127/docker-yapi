@@ -1,17 +1,12 @@
 ## 构建容器镜像
 
-通过 git submodule 方式，提前下载 [yapi 源码](git@github.com:YMFE/yapi.git) 到 `code` 目录：
-
-```bash
-# 需要将 .gitmodules 替换为你有权限访问的 git 仓库地址
-git submodule update
-```
-
 构建容器镜像：
 
 ```bash
 docker build -t zhb127/yapi ./
 ```
+
+> 注意！`code` 目录是直接 `git clone git@github.com:YMFE/yapi.git code` 的，比较大。
 
 ## 运行容器镜像
 
@@ -52,3 +47,7 @@ EOF
 ```bash
 docker run -d --name yapi -p 3000:3000 -v $(pwd)/config.json:/yapi/config.json --link yapi-mongodb zhb127/yapi
 ```
+
+## 参考资料
+
+- [https://github.com/crper/yapi-docker](https://github.com/crper/yapi-docker)
