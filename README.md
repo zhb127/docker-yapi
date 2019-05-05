@@ -40,7 +40,7 @@ cat > config.json <<EOF
 EOF
 ```
 
-> 注意！由于 yapi 默认是内网部署的，管理员密码统一为 `ymfe.org`，不能通过配置文件修改（可自行修改代码或数据库）。完整的配置项可到源码目录中查看 config.json.example 文件。
+> 注意！由于 yapi 默认管理员密码统为 `ymfe.org`，安装完成后，登录修改。
 
 运行 yapi 容器镜像：
 
